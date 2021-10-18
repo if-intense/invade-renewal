@@ -1,0 +1,569 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+}
+.wrapper .navbar {
+  background: #9DE7D7;
+}
+.wrapper .top-banner {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.4)), url("../images/world-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 2/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .top-banner .logo {
+  width: 40%;
+}
+.wrapper .top-banner .logo h1 span {
+  font-size: 0.8em;
+}
+.wrapper section {
+  position: relative;
+}
+.wrapper section .sect {
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  color: #d3d3d3;
+}
+.wrapper section .sect span {
+  font-size: 0.9em;
+}
+.wrapper section .sect p {
+  font-size: 2em;
+  font-weight: normal;
+  position: absolute;
+  left: 70%;
+  top: -5%;
+}
+.wrapper .part1 {
+  background-size: cover;
+  background-position: center;
+}
+.wrapper .part1 .about-our-company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .part1 .about-our-company .text {
+  margin-top: 8vh;
+  width: 85%;
+}
+.wrapper .part1 .about-our-company .text h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.wrapper .part1 .about-our-company .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.wrapper .part1 .about-our-company .text h2 {
+  font-family: "Manrope", sans-serif;
+}
+.wrapper .part1 .about-our-company .text p {
+  white-space: pre-wrap;
+}
+.wrapper .part1 .info {
+  color: #fff;
+  background: rgba(32, 33, 91, 0.5);
+  background: url("../images/city-networking.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wrapper .part1 .image-1 {
+  background: url("../images/city-networking.jpg") no-repeat;
+  background-position: center;
+  background-size: fill;
+}
+.wrapper .part2 {
+  background: url(../images/section-img01.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding-bottom: 8vh;
+}
+.wrapper .part2 .our-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .part2 .our-projects .text {
+  margin-top: 8vh;
+  width: 85%;
+}
+.wrapper .part2 .our-projects .text h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.wrapper .part2 .our-projects .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.wrapper .part2 .our-projects .text h2 {
+  font-family: "Manrope", sans-serif;
+}
+.wrapper .part2 .our-projects .text p {
+  white-space: pre-wrap;
+}
+.wrapper .part2 .services {
+  display: flex;
+  padding: 0 2%;
+  width: 75%;
+  margin: 5vh auto 0;
+}
+.wrapper .part2 .services .item {
+  flex: 1;
+  flex-direction: column;
+  margin: 0 1%;
+  color: white;
+  background-color: rgba(32, 33, 91, 0.5);
+  box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.wrapper .part2 .services .item .img img {
+  border-radius: 5px 5px 0 0;
+}
+.wrapper .part2 .services .item .title {
+  border-bottom: 1px dotted white;
+  padding: 5px 10px;
+}
+.wrapper .part2 .services .item .type {
+  padding: 10px 10px;
+}
+.wrapper .part2 .services .item .type h5 {
+  font-size: 0.9em;
+}
+.wrapper .part2 .services .item .body {
+  padding: 10px 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  margin-bottom: 3vh;
+}
+.wrapper .part2 .services .item .link {
+  margin-bottom: 2vh;
+  padding: 0 10px;
+}
+.wrapper .part2 .services .item .link a.to-link-btn {
+  color: #2b5329;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #2b5329;
+  background: #ffffff;
+  padding: 5px 20px;
+}
+.wrapper .part2 .services .item .link a.to-link-btn:hover {
+  color: white;
+  background: #2b5329;
+}
+.wrapper .part2 .services .item .link a.btn-details {
+  color: #3F2857;
+  text-decoration: none;
+  color: black;
+  background: #ffcc00;
+  padding: 5px 20px;
+}
+.wrapper .part2 .services .item .link a.btn-details:hover {
+  color: white;
+  background: #ffcc00;
+}
+.wrapper .part3 {
+  background: url("../images/world-map.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper .part3 .our-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .part3 .our-projects .text {
+  margin-top: 8vh;
+  width: 85%;
+}
+.wrapper .part3 .our-projects .text h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.wrapper .part3 .our-projects .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.wrapper .part3 .our-projects .text h2 {
+  font-family: "Manrope", sans-serif;
+}
+.wrapper .part3 .our-projects .text p {
+  white-space: pre-wrap;
+}
+.wrapper .part3 .corporate-profile {
+  padding: 4vh 3vw;
+}
+.wrapper .part3 .corporate-profile .info {
+  width: 90%;
+  margin: 3vh auto;
+  background: rgba(30, 30, 30, 0.1);
+  padding: 30px 20px;
+  box-shadow: 1px 3px 6px rgba(68, 68, 75, 0.397);
+}
+.wrapper .part3 .corporate-profile .info h3 {
+  font-size: 1.5em;
+  border-left: 8px solid #2A908D;
+  padding-left: 5px;
+  border-bottom: 1px solid rgba(68, 68, 75, 0.397);
+}
+.wrapper .part3 .corporate-profile .info p {
+  padding: 0 10px;
+}
+.wrapper .part3 .corporate-profile .info dl dt {
+  font-weight: normal;
+}
+.wrapper .part3 .corporate-profile .info dl dt span {
+  margin-left: 10px;
+  font-size: 1.15em;
+}
+.wrapper .part4 {
+  padding-bottom: 8vh;
+  background: #faf9f6;
+}
+.wrapper .part4 .our-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .part4 .our-projects .text {
+  margin-top: 8vh;
+  width: 85%;
+}
+.wrapper .part4 .our-projects .text h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.wrapper .part4 .our-projects .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.wrapper .part4 .our-projects .text h2 {
+  font-family: "Manrope", sans-serif;
+}
+.wrapper .part4 .our-projects .text p {
+  white-space: pre-wrap;
+}
+.wrapper .part4 #list {
+  width: 100%;
+  max-width: 1200px;
+  margin: 4vh auto;
+}
+.wrapper .part4 #list > .textContents {
+  background: white;
+  padding: 20px;
+}
+.wrapper .part4 #list > .textContents h2 {
+  text-align: center;
+}
+.wrapper .part4 #list > .textContents h5 span {
+  padding: 3px 5px;
+  font-size: 0.8em;
+}
+.wrapper .part4 #list > .textContents h5 span:before {
+  content: "#";
+  padding-right: 5px;
+}
+.wrapper .part4 #list > .textContents .development {
+  color: blue;
+}
+.wrapper .part4 #list > .textContents .development span {
+  border: 1px solid blue;
+}
+.wrapper .part4 .ac-container {
+  max-width: 920px;
+  border-top: none;
+  width: 100%;
+  margin: 10px auto;
+  box-shadow: 1px 3px 6px rgba(68, 68, 75, 0.397);
+  position: relative;
+}
+.wrapper .part4 .ac-container .each label {
+  line-height: 1.8;
+  font-size: 20px;
+  padding: 5px 20px;
+  display: block;
+  cursor: pointer;
+  background: white;
+  border-bottom: 1px dotted #666;
+}
+.wrapper .part4 .ac-container .each label em {
+  font-size: 0.8em;
+  font-style: normal;
+  margin-right: 10px;
+  color: #656565;
+}
+.wrapper .part4 .ac-container .each label em:before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  margin-right: 5px;
+  font-size: 0.8em;
+}
+.wrapper .part4 .ac-container .each label span.new {
+  color: white;
+  background: red;
+  margin-left: 5px;
+  padding: 0 10px;
+  font-size: 0.7em;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.wrapper .part4 .ac-container .each label span.older {
+  color: blue;
+  margin-left: 5px;
+  padding: 0 10px;
+  font-size: 0.7em;
+  border: 1px solid blue;
+  box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+.wrapper .part4 .ac-container .each label:hover {
+  background: #9DE7D7;
+  color: #000;
+}
+.wrapper .part4 .ac-container .each input {
+  display: none;
+}
+.wrapper .part4 .ac-container .each input:checked ~ article {
+  height: 250px;
+  overflow-y: scroll;
+  background: lightgray;
+}
+.wrapper .part4 .ac-container .each article {
+  overflow: hidden;
+  height: 0;
+  transition: 0.6s;
+}
+.wrapper .part4 .ac-container .each article p {
+  padding: 20px;
+  color: #666;
+  line-height: 1.5;
+}
+.wrapper .part5 {
+  padding-bottom: 5vh;
+}
+.wrapper .part5 .our-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .part5 .our-projects .text {
+  margin-top: 8vh;
+  width: 85%;
+}
+.wrapper .part5 .our-projects .text h6 {
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.wrapper .part5 .our-projects .text h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+.wrapper .part5 .our-projects .text h2 {
+  font-family: "Manrope", sans-serif;
+}
+.wrapper .part5 .our-projects .text p {
+  white-space: pre-wrap;
+}
+.wrapper .part5 .container .contact-form .block {
+  margin: 2vh auto;
+}
+.wrapper .part5 .container .contact-form .block label {
+  position: relative;
+}
+.wrapper .part5 .container .contact-form .block label span {
+  color: red;
+  margin-left: 5px;
+}
+.wrapper .part5 .container .contact-form .block input, .wrapper .part5 .container .contact-form .block textarea {
+  width: 100%;
+}
+.wrapper .part5 .container .contact-form h6 span {
+  color: red;
+  margin-right: 5px;
+}
+.wrapper .part5 .container .info-box {
+  border: 3px solid #9DE7D7;
+  padding: 10px 20px;
+}
+.wrapper .part5 .container .info-box h2 {
+  font-size: 1.25em;
+  text-align: center;
+}
+.wrapper .part5 .container .info-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+.wrapper .part5 .container .contact-us {
+  margin-top: 4vh;
+}
+.wrapper .part5 .container .contact-us h4 {
+  text-align: center;
+}
+.wrapper .part5 .container .contact-us h5 {
+  text-align: center;
+}
+.wrapper .footer {
+  background: #263f49;
+  color: #fff;
+  padding: 3vh 2vh;
+}
+.wrapper .footer ul li a {
+  color: #fff;
+}
+.wrapper .footer-mail {
+  background: #263f49;
+  color: #fff;
+  padding: 3vh 2vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.wrapper .footer-mail ul li a {
+  color: #fff;
+}
+
+.modal {
+  color: #3a3b3c;
+}
+.modal .modal-body .modal-images img {
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.modal .modal-body p {
+  padding: 10px 20px;
+  line-height: 2em;
+}
+.modal .modal-body .youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.modal .modal-body .youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal .go-to-link-modal {
+  color: #2b5329;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #2b5329;
+  background: #ffffff;
+  padding: 5px 20px;
+}
+.modal .go-to-link-modal:hover {
+  color: white;
+  background: #2b5329;
+}
+.modal .close-modal {
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  background: gray;
+  padding: 5px 20px;
+}
+.modal .close-modal:hover {
+  border: solid 1px black;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper .part2 .services {
+    width: 80%;
+    min-width: 960px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrapper .part2 .services {
+    width: 90%;
+    max-width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper .part2 .services {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper .top-banner {
+    aspect-ratio: 1;
+  }
+  .wrapper .top-banner .logo {
+    width: 60%;
+  }
+  .wrapper .part2 .services {
+    flex-direction: column;
+  }
+  .wrapper .part2 .services .item {
+    margin: 20px 1%;
+  }
+
+  .modal .modal-body .modal-images {
+    margin: 1vh auto;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .modal-dialog {
+    max-width: 90% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .modal .modal-body .modal-images {
+    margin: 1vh auto;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal .modal-body .modal-images {
+    margin: 1vh auto;
+    width: 85%;
+  }
+
+  .wrapper .part4 .ac-container .each label {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal .modal-body .modal-images {
+    margin: 1vh auto;
+    width: 85%;
+  }
+
+  .wrapper .part4 .ac-container .each label {
+    font-size: 12px;
+  }
+  .wrapper .part4 .ac-container .each article p {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
