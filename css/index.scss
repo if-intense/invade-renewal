@@ -678,6 +678,12 @@ body {
     }
 
     .wrapper {
+        .top-banner {
+            aspect-ratio: 1;
+            .logo {
+                width:60%;
+            }
+        }
         .part4 {
             .ac-container {
                 .each {

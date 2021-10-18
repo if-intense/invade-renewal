@@ -548,6 +548,12 @@ body {
     width: 85%;
   }
 
+  .wrapper .top-banner {
+    aspect-ratio: 1;
+  }
+  .wrapper .top-banner .logo {
+    width: 60%;
+  }
   .wrapper .part4 .ac-container .each label {
     font-size: 14px;
   }
