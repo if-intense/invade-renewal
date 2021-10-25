@@ -14,7 +14,7 @@ body {
   background: #9DE7D7;
 }
 .wrapper .top-banner {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.4)), url("../images/world-bg.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(230, 230, 230, 0.4)), url("../images/wordmap.jpg");
   background-size: cover;
   background-position: center;
   aspect-ratio: 2/1;
