@@ -680,7 +680,8 @@ body {
 
     .wrapper {
         .top-banner {
-            aspect-ratio: 1;
+           height: 100vh;
+           width: 100%;
             .logo {
                 width:60%;
             }
