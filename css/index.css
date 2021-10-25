@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -182,6 +181,7 @@ body {
 .wrapper .part2 .services .item .link a.btn-details:hover {
   color: white;
   background: #ffcc00;
+  cursor: pointer;
 }
 .wrapper .part3 {
   background: url("../images/world-map.png") no-repeat;
@@ -316,8 +316,6 @@ body {
   color: #656565;
 }
 .wrapper .part4 .ac-container .each label em:before {
-  font-family: "Font Awesome 5 Free";
-  content: "";
   margin-right: 5px;
   font-size: 0.8em;
 }
