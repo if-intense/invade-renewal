@@ -7,7 +7,10 @@ body {
     overflow-x: hidden;
 }
 
-
+.navbar-light .navbar-toggler {
+    color: none;
+    border-color: none;
+}
 
 
 
@@ -639,6 +642,10 @@ body {
                 }
             }
         }
+        .part4 {
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
     }
     .modal {
         .modal-body {
@@ -691,6 +698,9 @@ body {
                 .each {
                     label {
                         font-size:14px;
+                        span.older {
+                            padding:0 5px;
+                        }
                     }
                 }
             }

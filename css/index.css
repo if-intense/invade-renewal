@@ -7,6 +7,11 @@ body {
   overflow-x: hidden;
 }
 
+.navbar-light .navbar-toggler {
+  color: none;
+  border-color: none;
+}
+
 .wrapper {
   width: 100%;
 }
@@ -523,6 +528,10 @@ body {
   .wrapper .part2 .services .item {
     margin: 20px 1%;
   }
+  .wrapper .part4 {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
 
   .modal .modal-body .modal-images {
     margin: 1vh auto;
@@ -555,6 +564,9 @@ body {
   }
   .wrapper .part4 .ac-container .each label {
     font-size: 14px;
+  }
+  .wrapper .part4 .ac-container .each label span.older {
+    padding: 0 5px;
   }
 }
 @media screen and (max-width: 400px) {
