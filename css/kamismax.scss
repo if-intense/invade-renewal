@@ -268,12 +268,12 @@ $kmax-white: rgba(233,233,233);
                     }
                     a {
                         // font-weight: bold;
-                        color:$kmax-white;
-                        background: $kmax-orange;
+                        color:$kmax-black;
+                        // background: $kmax-orange;
                         text-decoration: none;
                         padding:3px 10px;
                         margin-left: 5px;
-                        box-shadow: 3px 3px 6px rgba(193,193,193,1);
+                        // box-shadow: 3px 3px 6px rgba(193,193,193,1);
                         border-radius: 4px;
                         &:hover {
                             // font-weight: bold;

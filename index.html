@@ -46,9 +46,10 @@
                   PROJECTS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="projects/kamismax/index.html">KAMISMAX</a></li>
                   <li><a class="dropdown-item" href="projects/kamisma-beauty/index.html">KAMISMA BEAUTY</a></li>
                   <li><a class="dropdown-item" href="projects/nile-beauty/index.html">NILE BEAUTY</a></li>
-                  <li><a class="dropdown-item" href="projects/kamismax/index.html">KAMISMAX</a></li>
+                  
                 </ul>
               </li>
               <li class="nav-item">
@@ -189,6 +190,28 @@
             </div>
             
             <div class="services">
+
+              <div class="item">
+                  <div class="img">
+                    <img src="images/003-kamismax.png" :alt="$t('kmx.title')" class="img-fluid">
+                  </div>
+                  <div class="title">
+                    <h4>{{ $t("kmx.title") }}</h4>
+                  </div>
+                  <div class="type">
+                    <h5>{{ $t("kmx.type") }}</h5>
+                  </div>
+                  <div class="body">
+                    <p style="white-space:pre-wrap;">{{ $t("kmx.body") }}</p>
+                  </div>
+                  <div class="link">
+                    <!-- <p><a class="to-link-btn" href="#">{{ $t("kmx.link") }}</a></p> -->
+                    <p><a href="projects/kamismax/index.html" class="btn-details">{{ $t("kmx.details") }}</a></p>
+                    <!-- <p><a class="btn-details" data-bs-toggle="modal" data-bs-target="#kmxModal">
+                      {{ $t("kmx.details") }}
+                    </a></p> -->
+                  </div>
+              </div>
               <div class="item">
                   <div class="img">
                     <img src="images/001-kamisma-beauty-logo.png" alt="KAMISMA Beauty" class="img-fluid">
@@ -203,7 +226,7 @@
                     <p style="white-space:pre-wrap;">{{ $t("kmb.body") }}</p>
                   </div>
                   <div class="link">
-                    <p><a class="to-link-btn" href="https://www.kamisma.com/">{{ $t("kmb.link") }}</a></p>
+                    <!-- <p><a class="to-link-btn" href="https://www.kamisma.com/">{{ $t("kmb.link") }}</a></p> -->
                     
                     <!-- <p><a class="btn-details" data-bs-toggle="modal" data-bs-target="#kamismaModal">
                       {{ $t("kmb.details") }}
@@ -225,7 +248,7 @@
                     <p style="white-space:pre-wrap;">{{ $t("nileBeauty.body") }}</p>
                   </div>
                   <div class="link">
-                    <p><a class="to-link-btn" href="https://beauty.nile.inc/">{{ $t("nileBeauty.link") }}</a></p>
+                    <!-- <p><a class="to-link-btn" href="https://beauty.nile.inc/">{{ $t("nileBeauty.link") }}</a></p> -->
                     <p><a href="projects/nile/index.html" class="btn-details">{{ $t("nileBeauty.details") }}</a></p>
                     <!-- <p><a class="btn-details" data-bs-toggle="modal" data-bs-target="#nileModal">{{ $t("nileBeauty.details") }}</a></p> -->
                     <!-- open modal -->
@@ -233,130 +256,7 @@
                   </div>                 
               </div>
 
-              <div class="item">
-                  <div class="img">
-                    <img src="images/003-kamismax.png" :alt="$t('kmx.title')" class="img-fluid">
-                  </div>
-                  <div class="title">
-                    <h4>{{ $t("kmx.title") }}</h4>
-                  </div>
-                  <div class="type">
-                    <h5>{{ $t("kmx.type") }}</h5>
-                  </div>
-                  <div class="body">
-                    <p style="white-space:pre-wrap;">{{ $t("kmx.body") }}</p>
-                  </div>
-                  <div class="link">
-                    <p><a class="to-link-btn" href="#">{{ $t("kmx.link") }}</a></p>
-                    <p><a href="projects/kamismax/index.html" class="btn-details">{{ $t("kmx.details") }}</a></p>
-                    <!-- <p><a class="btn-details" data-bs-toggle="modal" data-bs-target="#kmxModal">
-                      {{ $t("kmx.details") }}
-                    </a></p> -->
-                  </div>
-              </div>
-
-              <!-- kamisma beauty modal -->
-              <div class="modal fade" id="kamismaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">{{ $t("kmb.title") }}</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="modal-images col-lg-4 col-md-4">
-                          <img src="images/kamisma-001.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                        <div class="modal-images col-lg-4 col-md-4">
-                          <img src="images/kamisma-002.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                        <div class="modal-images col-lg-4 col-md-4">
-                          <img src="images/kamisma-003.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                      </div>
-                      <h5>{{ $t("kmb.type")}}</h5>
-                      <p style="white-space:pre-wrap;">{{ $t("kmb.body") }}</p>
-                      
-                    </div>
-                    <div class="modal-footer">
-                      <a class="close-modal" data-bs-dismiss="modal">{{ $t("kmb.close") }}</a>
-                      <a class="go-to-link-modal" href="https://www.kamisma.com/" target="_blank">{{$t("kmb.link")}}</a>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- nile-beauty modal -->
-              <div class="modal fade" id="nileModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">{{ $t("nileBeauty.title") }}</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row my-5">
-                        <div class="modal-images col-lg-4 col-md-4">
-                          <img src="images/nile-001.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                        <div class="modal-images col-lg-4 col-md-4">
-                          <img src="images/nile-002.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                        <div class="modal-images col-lg-4 col-md-4">
-                          <img src="images/nile-003.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                      </div>
-                      
-                      <h5>{{ $t("nileBeauty.type")}}</h5>
-                      <p style="white-space:pre-wrap;">{{ $t("nileBeauty.body") }}</p>
-                      <div class="youtube">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jVtl2kRIXls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                      </div>
-                      
-                    </div>
-                    <div class="modal-footer">
-                      <a  class="close-modal" data-bs-dismiss="modal">{{ $t("nileBeauty.close") }}</a>
-                      <a class="go-to-link-modal" href="https://beauty.nile.inc" target="_blank">{{$t("nileBeauty.link")}}</a>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- kmax modal -->
-              <div class="modal fade" id="kmxModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">{{ $t("kmx.title") }}</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="row">
-                        <div class="modal-images col-lg-4 col-8">
-                          <img src="images/003-kamismax.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                        <div class="modal-images col-lg-4 col-8">
-                          <img src="images/003-kamismax.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                        <div class="modal-images col-lg-4 col-8">
-                          <img src="images/003-kamismax.png" class="img-fluid" alt="NILE INVADE CO. Ltd" >
-                        </div>
-                      </div>
-                      <h5>{{ $t("kmx.type")}}</h5>
-                      <p style="white-space:pre-wrap;">{{ $t("kmx.body") }}</p>
-                      <!-- <a href="https://beauty.nile.inc/" target="_blank">{{$t("kmx.link")}}</a> -->
-                    </div>
-                    <div class="modal-footer">
-                      <a class="close-modal" data-bs-dismiss="modal">{{ $t("kmx.close") }}</a>
-                      <a class="go-to-link-modal" href="#" target="_blank">{{$t("kmx.link")}}</a>
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
+            
 
 
             </div>
