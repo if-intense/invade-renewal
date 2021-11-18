@@ -901,6 +901,22 @@ body {
             } 
         }
     }
+
+    .wrapper {
+        .part2 {
+            .services {
+                .item {
+                    .body {
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        margin-bottom: 3vh;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {

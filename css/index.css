@@ -728,6 +728,14 @@ body {
   .wrapper2 .section01 p {
     padding: 0 10px;
   }
+
+  .wrapper .part2 .services .item .body {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    margin-bottom: 3vh;
+  }
 }
 @media screen and (max-width: 480px) {
   .modal .modal-body .modal-images {
