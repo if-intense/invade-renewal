@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/nile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    
+<!-- PT Serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&family=Shippori+Mincho&display=swap" rel="stylesheet">    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    
+    <title>NILE - インベード株式会社 || INVADE Co., Ltd. - KAMISMA BEAUTY</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+</head>
+
+<body>
+    <div class="wrapper4" id="nileApp">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../../index.html"><img src="../../images/invade-logo-2.svg" alt="INVADE" height="15"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">TOP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#news">NEWS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#about">ABOUT</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     PROJECTS
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="projects/kamisma-beauty/index.html">KAMISMA BEAUTY</a>
+                      <a class="dropdown-item" href="projects/nile-beauty/index.html">NILE BEAUTY</a>
+                      <a class="dropdown-item" href="projects/kamismax/index.html">KAMISMAX</a>
+                    </div>
+                  </li> -->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PROJECTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../kamismax/index.html">KAMISMAX</a></li>
+                      <li><a class="dropdown-item" href="../kamisma-beauty/index.html">KAMISMA BEAUTY</a></li>
+                      <li><a class="dropdown-item active" href="index.html">NILE BEAUTY</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#profile">PROFILE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../index.html#contact">CONTACT</a>
+                  </li>
+                  <select v-model="$i18n.locale">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                  </select>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        
+        <div class="title-banner">
+            <div class="logo-area">
+                <div class="logo-img">
+                    <img src="../../images/nile/nile-beauty.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <section class="section01">
+              <div class="container">
+                <div class="intro col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12">
+                    <div class="intro-text">
+                      <h6 class="text-center" v-html="$t('section01.top')"></h6>
+                    </div>
+                    <div class="video-container">
+                      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/niUeC32DTLA"></iframe>
+                    </div>  
+                    <div class="video-bottom-text">
+                      <p v-html="$t('section01.bottom')"></p>
+                    </div>
+                </div>
+              </div>
+            </section>
+            <section class="section02">
+              <div class="background-text">
+                <h2>ABOUT NILE</h2>
+              </div>
+              <div class="container">
+                <div class="about">
+                  <p v-html="$t('section02.about')"></p>
+                </div>
+              </div>
+            </section>
+            <section class="section03">
+              
+              <div class="container">
+                <h3>With NILE, you can...</h3>
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6 mb-3">
+                    <div class="card h-100" data-aos="zoom-right">
+                      <img src="../../images/nile/img001.png" alt="exhibition" class="img-fluid">
+                      <div class="card-body">
+                        <p class="card-text smaller" v-html="$t('section03.youcan1')"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-3">
+                    <div class="card h-100" data-aos="zoom-right">
+                      <img src="../../images/nile/img002.png" alt="exhibition" class="img-fluid">
+                      <div class="card-body">
+                        <p class="card-text smaller" v-html="$t('section03.youcan2')"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-3">
+                    <div class="card h-100" data-aos="zoom-right">
+                      <img src="../../images/nile/img003.png" alt="exhibition" class="img-fluid">
+                      <div class="card-body">
+                        <p class="card-text smaller" v-html="$t('section03.youcan3')"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 mb-3">
+                    <div class="card h-100" data-aos="zoom-right">
+                      <img src="../../images/nile/img004.png" alt="exhibition" class="img-fluid">
+                      <div class="card-body">
+                        <p class="card-text smaller" v-html="$t('section03.youcan4')"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="col-lg-3 col-sm-6 mb-3" v-for="capability in capabilities">
+                    <div class="card h-100" data-aos="zoom-right">
+                      <img :src="capability.image" alt="exhibition" class="img-fluid">
+                      <div class="card-body">
+                        <p class="card-text smaller"><strong>{{ capability.number }}. </strong>{{ capability.text }} </p>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="list">
+                  <!-- <ul v-for="cap in capabilities2">
+                    <li><strong>{{cap.number}}.</strong> {{ cap.text }}</li>
+                  </ul> -->
+                  <ul>
+                    <li v-html="$t('section03.youcan5')"></li>
+                    <li v-html="$t('section03.youcan6')"></li>
+                    <li v-html="$t('section03.youcan7')"></li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="section04">
+              <div class="container">
+                <h2 class="mb-3">You can start easily with NILE.</h2>
+                  
+                  <div class="row">
+                    <!--ADD CLASSES HERE d-flex align-items-stretch-->
+                    <!-- <div class="col-lg-4 col-md-4 mb-3 d-flex align-items-stretch" v-for="accomplish in accomplishments">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column top-text">
+                          <p class="card-text mb-4">{{accomplish.task}}</p>
+                        </div>
+                        <img :src="accomplish.image" alt="image" class="img-fluid">
+                        <div class="card-body d-flex flex-column bottom-text">
+                          <p class="card-text mb-4">{{accomplish.solution}}</p>
+                        </div>
+                      </div>
+                    </div> -->
+
+                    <div class="col-lg-4 col-md-4 mb-3 d-flex align-items-stretch">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column top-text">
+                          <p class="card-text mb-4" v-html="$t('section04.top1')"></p>
+                        </div>
+                        <img src="../../images/nile/st001.png" alt="image" class="img-fluid">
+                        <div class="card-body d-flex flex-column bottom-text">
+                          <p class="card-text mb-4" v-html="$t('section04.bottom1')"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-3 d-flex align-items-stretch">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column top-text">
+                          <p class="card-text mb-4" v-html="$t('section04.top2')"></p>
+                        </div>
+                        <img src="../../images/nile/st002.png" alt="image" class="img-fluid">
+                        <div class="card-body d-flex flex-column bottom-text">
+                          <p class="card-text mb-4" v-html="$t('section04.bottom2')"></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 mb-3 d-flex align-items-stretch">
+                      <div class="card">
+                        <div class="card-body d-flex flex-column top-text">
+                          <p class="card-text mb-4" v-html="$t('section04.top3')"></p>
+                        </div>
+                        <img src="../../images/nile/st003.png" alt="image" class="img-fluid">
+                        <div class="card-body d-flex flex-column bottom-text">
+                          <p class="card-text mb-4" v-html="$t('section04.bottom3')"></p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+                  <p class="text-center my-3 small" v-html="$t('section04.solve')"></p>
+              </div>
+              <hr>
+              <div class="container end">
+                <div class="to-end" v-html="$t('section04.message')"></div>
+                <div class="to-link">
+                  <h6 v-html="$t('section04.register')"></h6>
+                  <p class="link"><a href="https://beauty.nile.inc">https://beauty.nile.inc</a></p>
+                </div>
+                <div class="to-link">
+                  <h6 v-html="$t('section04.service')"></h6>
+                  <p class="link"><a href="https://beauty.nile.inc/service">https://beauty.nile.inc/service</a></p>
+                </div>
+              </div>
+            </section>
+        </div>
+        <section class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4 company-footer text-center">
+                  <h5>INVADE Co., Ltd.</h5>
+                  <p>TEL: 03-5962-8585
+                  <br><strong>email:</strong><a href="info@invade.co.jp">info@invade.co.jp</a></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <h5>{{ $t("footer.service") }}</h5>
+                  <ul class="p-0" style="list-style: none;">
+                    <li><a href="https://beauty.kamisma.com" target="_blank">KAMISMA BEAUTY</a></li>
+                    <li><a href="https://beauty.nile.inc" target="_blank">NILE BEAUTY</a></li>
+                    <li><a href="https://kamismax.kamisma.com" target="_blank">KAMISMAX</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                  
+                </div>
+              </div>
+              <hr>
+              <p class="text-center">Copyright INVADE Co., Ltd. All Rights Reserved</p>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+var vm = new Vue ({
+    el: '#app-jp',
+    data: {
+        capabilities: [
+            {number: 1, text: '出展にかかる時間やコストを大幅に削減。必要なのは月額費用と商談チャットチケット代だけ(商談企業はチケット代以外無料)。', image: '../../images/nile/img001.png'},
+            {number: 2, text: '国際的なビジネスマッチングができます。', image: '../../images/nile/img002.png'},
+            {number: 3, text: '商談用チャット機能あり。専用スタンプで、気軽にやり取りができる。やりとりの進捗・ステータス管理ができる。', image: '../../images/nile/img003.png'},
+            {number: 4, text: '便利な多言語機能（英語・フランス語・スペイン語・中国語・日本語）。', image: '../../images/nile/img004.png'},
+        ],
+        capabilities2: [
+            {number: 5, text: 'NILEに出展（Exhibitor）すれば企業情報、商品情報、たくさんのコンテンツ記事を登録企業に配信することができます（出展企業だけの機能）'},
+            {number: 6, text: 'NILEに商談企業（Negotiator）として登録すれば、出展企業の情報をいつでも気軽に見る、集める、話すことができます。'},
+            {number: 7, text: '紹介・招待システムあり。お知り合いの企業をサイトに招待・登録していただくと、無料商談チケットをプレゼント。'},
+        ]
+    }
+});
+
+var tr = new Vue ({
+    el: '#new-jp',
+    data: {
+        accomplishments: [
+            {task: 'これまでのサービスでは、アプリやソフトをダウンロードしなければものばかり*', solution: 'NILEは、ダウンロードの必要なし！ネットがつながれば、直ぐに利用できます！', image:'../../images/nile/st001.png' },
+            {task: 'どれくらいの企業がアクセスしたか、マッチング率などの情報を知ることができない*', solution: 'NILEは企業管理画面も充実！訪問者数分析はもちろん、チケット購入まで一元管理できます！', image:'../../images/nile/st002.png' },
+            {task: '展示会イベントやウェビナーを実施してもなかなか成約率が上がらない*', solution: '商談用チャットのスタンプを使えば、より簡単・円滑ににコミュニケーションを取れます！', image:'../../images/nile/st003.png' },
+        ],
+        message: ' これらは、これまでのサービスが直面してきた課題です。',
+    }
+})
+
+var tr = new Vue ({
+  el: "#conclusion",
+  data: {
+    message: '<p>NILE BEAUTYは、これまでのビジネスのあり方を大きく変える、その一翼を担う国際的なB2Bマッチングサービスです。</p><p>ぜひ、NILE BEAUTYを活用していただき、新しいビジネスの出会いを見つけてください。</p>',
+    register: 'ご登録はこちら',
+    service: 'サービス概要'
+  }
+})
+
+</script>
+<script src="https://unpkg.com/vue@next"></script>    
+<script src="https://unpkg.com/vue-i18n@next"></script>
+<script>
+  const { createApp } = Vue;
+  const { createI18n } = VueI18n;
+
+  const i18n = createI18n({
+    locale: "ja",
+    messages: {
+      ja: {
+        section01: {
+          top: '<span>NILE BEAUTYは、世界中の美容企業がいつでもどこでも<br>オンラインでB2Bマッチングできる全く新しいサービス。</span>',
+          bottom: '24時間365日、スマホひとつで、<br class="line-break500">新しいビジネスパートナー見つけることができます。'
+        },
+        section02: {
+          about: 'これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。<br>そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。<br><strong>NILE BEAUTY</strong>は企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。<br>既存のサービスと一線を画す画期的なコンテンツを発信します。<br>絞り込まれた情報を見るのではなく、これまでは情報収集、商談、取引までビジネスの多くが対面によるものでした。<br>そんな中、SNSの普及や5Gの登場により情報化社会の加速が急速に進み、ビジネスの在り方も変化していきます。<br> NILE BEAUTYは企業と企業、企業と個人が出会う場所をオンライン上で創出するB2Bマッチングサービスです。<br>既存のサービスと一線を画す画期的なコンテンツを発信します。<br>絞り込まれた情報を見るのではなく、オンラインだからこそ実現できる良質な「偶然の出会い」を提供し、長く続くビジネスをサポートいたします。',
+        },
+        section03: {
+          youcan1: '<strong>1.</strong> 出展にかかる時間やコストを大幅に削減。必要なのは月額費用と商談チャットチケット代だけ(商談企業はチケット代以外無料)。',
+          youcan2: '<strong>2.</strong> 国際的なビジネスマッチングができます。',
+          youcan3: '<strong>3.</strong> 商談用チャット機能あり。専用スタンプで、気軽にやり取りができる。やりとりの進捗・ステータス管理ができる。',
+          youcan4: '<strong>4.</strong> 便利な多言語機能（英語・フランス語・スペイン語・中国語・日本語）。',
+          youcan5: '<strong>5.</strong> NILEに出展（Exhibitor）すれば企業情報、商品情報、たくさんのコンテンツ記事を登録企業に配信することができます（出展企業だけの機能）',
+          youcan6: '<strong>6.</strong> NILEに商談企業（Negotiator）として登録すれば、出展企業の情報をいつでも気軽に見る、集める、話すことができます。',
+          youcan7: '<strong>7.</strong> 紹介・招待システムあり。お知り合いの企業をサイトに招待・登録していただくと、無料商談チケットをプレゼント。',
+        },
+        section04: {
+          top1: 'これまでのサービスでは、アプリやソフトをダウンロードしなければものばかり*',
+          bottom1: 'NILEは、ダウンロードの必要なし！ネットがつながれば、直ぐに利用できます！',
+          top2: 'どれくらいの企業がアクセスしたか、マッチング率などの情報を知ることができない*',
+          bottom2: 'NILEは企業管理画面も充実！訪問者数分析はもちろん、チケット購入まで一元管理できます！',
+          top3: '展示会イベントやウェビナーを実施してもなかなか成約率が上がらない*',
+          bottom3: '商談用チャットのスタンプを使えば、より簡単・円滑ににコミュニケーションを取れます！',
+          solve: '*これらは、これまでのサービスが直面してきた課題です。',
+          message: '<p>NILE BEAUTYは、<br class="line-break500">これまでのビジネスのあり方を大きく変える、<br class="line-break500">その一翼を担う国際的なB2Bマッチングサービスです。</p><p>ぜひ、NILE BEAUTYを活用していただき、<br class="line-break500">新しいビジネスの出会いを見つけてください。</p>',
+          register: 'ご登録はこちら',
+          service: 'サービス概要'
+        },
+        footer: {
+          service: "サービス",
+        }
+      },
+      en: {
+        section01: {
+          top: '<span>NILE BEAUTY is an ONLINE B2B Business Matching Service, Where You Can Match with Beauty/Salon Companies from Abroad.</span>',
+          bottom: 'You Can Find a New Business Partner 24/7, All Year Long, All at Your Fingertips'
+        },
+        section02: {
+          about: 'Up until recently the way we would gather information, negotiate, and do business relied on meeting in person, and attending business events.  With the use of social media, and the advent of 5G, the information society is rapidly changing, and the way of business is changing along with it.<br> <strong>NILE BEAUTY</strong> provides the platform to matches business to business, business to individuals.<br>Not relying on the narrowed down information, we hope to create a service where you can meet by chance, and being able to create a long lasting business relationships.'
+        },
+        section03: {
+          youcan1: '<strong>1.</strong> Cut time and cost. Only costs are Exhibition and Negotiation chat fees.',
+          youcan2: '<strong>2.</strong>  Match with companies internationally.',
+          youcan3: '<strong>3.</strong> Chat casually. Use stickers! Can check the progress of the chats.',
+          youcan4: '<strong>4.</strong> Chat in multiple languages.',
+          youcan5: '<strong>5.</strong> By becoming an Exhibitor, you can post articles, product/company information.',
+          youcan6: '<strong>6.</strong> By becoming a Negotiator, you can view Exhibitor\'s information.',
+          youcan7: '<strong>7.</strong> With referrals, you can get additional tickets.'
+        },
+        section04: {
+          top1: 'You would need to download apps or software to match online.*',
+          bottom1: 'No need to purchase to PC or Smartphone. Use it directly. Quick and Easy!',
+          top2: 'You do not know how much people are viewing or how they are responding.*',
+          bottom2: 'You can check how much one is viewing, or interested in your company.',
+          top3: 'You are hosting events and webinars, but the negotiation rate is underwhelming.*',
+          bottom3: 'By using the stickers in the chat, you will have a smoother communication.',
+          solve: '* These are the tasks that this service is trying to solve.',
+          message: '<p>NILE BEAUTY is the international B2B matching service, tryinng to make make change of doing international business.</p><p>Please Use NILE BEAUTY and create a new business relationships.</p>',
+          register: 'Register Here',
+          service: 'More About Our Service',
+        },
+        footer: {
+          service: "Service",
+        }
+      },
+      methods: {
+        htmlToText: function (html) {
+          this.utilityEl.innerHTML = html;
+          return this.utilityEl.textContent;
+        }
+      }
+    }
+  });
+
+  // console.log($t("footer.service"));
+  const app = createApp({});
+  app.use(i18n);
+  app.mount("#nileApp");
+</script>
+
+
+</html>

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+.wrapper4 .navbar {
+  background: #9de7d7;
+}
+.wrapper4 .line-break500 {
+  display: none;
+}
+.wrapper4 .title-banner {
+  background: url(../images/nile/top-bg1.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 3/1;
+  position: relative;
+}
+.wrapper4 .title-banner .logo-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+}
+.wrapper4 .title-banner .logo-area .logo-img {
+  width: 60%;
+  margin: 0 auto;
+}
+.wrapper4 .title-banner .logo-area h3 {
+  color: white;
+  margin-top: 5vh;
+}
+.wrapper4 .title-banner .logo-area h5 {
+  color: white;
+}
+.wrapper4 section {
+  padding: 8vh 0;
+}
+.wrapper4 .section01 .intro .intro-text {
+  background: #055084;
+}
+.wrapper4 .section01 .intro .intro-text h6 {
+  line-height: 2em;
+  font-size: 1.25em;
+  color: #fff;
+}
+.wrapper4 .section01 .intro .video-container {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.wrapper4 .section01 .intro .video-container .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrapper4 .section01 .intro .video-bottom-text {
+  padding: 3vh 0;
+}
+.wrapper4 .section01 .intro .video-bottom-text p {
+  text-align: center;
+}
+.wrapper4 .section02 {
+  background: #037d75;
+  position: relative;
+}
+.wrapper4 .section02 .background-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "PT Serif", serif;
+}
+.wrapper4 .section02 .background-text h2 {
+  font-size: 3.5em;
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0 20px;
+}
+.wrapper4 .section02 .container .about {
+  border: 2px solid #037d75;
+  color: white;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+.wrapper4 .section02 .container .about p {
+  line-height: 2em;
+}
+.wrapper4 .section03 {
+  background: #e9e3e0;
+  background: linear-gradient(135deg, #e9e3e0 0%, #fff9f6 100%);
+}
+.wrapper4 .section03 .card {
+  border-radius: 10px 10px;
+  box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.5);
+}
+.wrapper4 .section03 .card .card-body {
+  background-color: #b4f1e4;
+  border-radius: 0 0 10px 10px;
+}
+.wrapper4 .section03 .list ul {
+  list-style-type: none;
+  padding: 10px 20px;
+}
+.wrapper4 .section03 .list ul li {
+  line-height: 2em;
+}
+.wrapper4 .section04 {
+  background: aliceblue;
+}
+.wrapper4 .section04 .container .card .top-text {
+  background: #055084;
+  color: #fff;
+}
+.wrapper4 .section04 .container .card .bottom-text {
+  background: #037d75;
+  color: #fff;
+}
+.wrapper4 .section04 .container .to-end {
+  margin: 5vh auto;
+}
+.wrapper4 .section04 .container .to-end p {
+  font-size: 1em;
+  text-align: center;
+}
+.wrapper4 .section04 .container .to-link {
+  width: 100%;
+  text-align: center;
+  max-width: 540px;
+  margin: 2vh auto;
+  background: #e74026;
+  box-shadow: 1px 3px 6px rgba(50, 50, 50, 0.7);
+  color: #fff;
+}
+.wrapper4 .section04 .container .to-link h6 {
+  padding: 2vh 0;
+  background: #e47564;
+  text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.7);
+  font-size: 1.25em;
+}
+.wrapper4 .section04 .container .to-link h6:before {
+  content: "【";
+}
+.wrapper4 .section04 .container .to-link h6:after {
+  content: "】";
+}
+.wrapper4 .section04 .container .to-link p {
+  padding: 2vh 0 3vh;
+}
+.wrapper4 .section04 .container .to-link p a {
+  color: #fff;
+}
+.wrapper4 .section04 .end {
+  margin: 8vh auto 4vh;
+}
+.wrapper4 .footer {
+  padding: 2vh 0;
+  font-family: "Shippori Mincho", serif;
+}
+.wrapper4 .footer .container .company-footer h5 {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper4 .line-break500 {
+    display: block;
+  }
+  .wrapper4 .section01 .intro .intro-text h6 {
+    font-size: 1em;
+  }
+  .wrapper4 .section02 .container .about {
+    padding: 20px 10px;
+  }
+  .wrapper4 .section02 .container .about p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 440px) {
+  .wrapper4 .section01 .intro .intro-text h6 {
+    font-size: 0.9em;
+  }
+}
+
+/*# sourceMappingURL=nile.css.map */

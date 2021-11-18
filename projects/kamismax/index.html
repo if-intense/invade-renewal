@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/kamismax.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+    <title>KAMISMAX - インベード株式会社 || INVADE Co., Ltd.</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    
+</head>
+
+<body>
+  <div class="wrapper3" id="kamismaxApp">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../../images/invade-logo-2.svg" alt="INVADE" height="15"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">TOP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#news">NEWS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">ABOUT</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      PROJECTS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item active" aria-current="page" href="index.html">KAMISMAX</a></li>
+                      <li><a class="dropdown-item" href="../kamisma-beauty/index.html">KAMISMA BEAUTY</a></li>
+                      <li><a class="dropdown-item" href="../nile-beauty/index.html">NILE BEAUTY</a></li>
+                      
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#profile">PROFILE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+                <select v-model="$i18n.locale">
+                  <option value="ja">日本語</option>
+                  <option value="en">English</option>
+                </select>
+              </div>
+            </div>
+        </nav>
+        <div class="title-banner">
+            <div class="logo-area">
+                <div class="logo-img">
+                    <img src="../../images/kmax-logo@2x.png" class="img-fluid">
+                </div>
+                <h3 class="text-center">{{$t("top.phrase")}}</h3>
+                <h5 class="text-center">#KAMISMAX #カミスマックス</h5> 
+            </div>  
+        </div>
+        <div class="container-fluid px-0">
+            <section class="section01">
+              <div class="video-area col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <video style="width:100%" controlslist="nodownload" muted autoplay loop playsinline controls>
+                  <source src="../../images/proj-kamismax/intro-video.mp4" type="video/mp4">
+              </div>
+              <div class="video-bottom-text col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                <!-- <h5 class="text-center">KAMISMAXは、<br>次代に向けた新しい教育環境を実現する<br>独自開発オンラインプラットフォームです。</h5> -->
+                <h5 class="text-center" v-html="$t('section01.h5text')"></h5>
+                <ul class="p-0">
+                  <li><span>{{$t("section01.li1")}}</span></li>
+                  <li><span>{{$t("section01.li2")}}</span></li>
+                </ul>
+                <p>{{$t("section01.ptext")}}</p>
+              </div>
+            </section>
+            <div class="banner">
+              <div class="container-fluid p-0">
+                <div class="banner-text-top text-center">
+                  
+                    <h5><a href="https://kamismax.kamisma.com">{{$t("section01.text2")}}</a></h5>
+                  
+                  <!-- <p><a href="https://kamismax.kamisma.com">{{$t("section01.text2")}}</a></p> -->
+                </div>
+                <div class="banner-text-bottom text-center">
+                  <h5><a href="https://kamismax.kamisma.com/service1/">{{$t("section01.text3")}}</a></h5>
+                <!-- <p><a href="https://kamismax.kamisma.com/service1/">https://kamismax.kamisma.com/service1/</a></p> -->
+                </div>
+              </div>
+            </div>
+            <section class="section02">
+              
+              <div class="container-fluid">
+                <div class="row row-flex">
+                  <div class="col-lg-6 col-md-6">
+                    <div class="information in-two">
+                      <div class="title">
+                        <h3><span>{{$t("section02.text1")}}</span></h3>
+                      </div>
+                      <div class="text">
+                        <h4><span>1. </span>{{$t("section02.text1Title")}}</h4>
+                        <p>{{$t("section02.text1Body")}}</p>
+                      </div>
+                      <div class="text">
+                        <h4><span>2. </span>{{$t("section02.text2Title")}}</h4>
+                        <p>{{$t("section02.text2Body")}}</p>
+                      </div>
+                      <div class="text">
+                        <h4><span>3. </span>{{$t("section02.text3Title")}}</h4>
+                        <p>{{$t("section02.text3Body")}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6">
+                    <div class="in-two">
+                      <img src="../../images/hand-image.png" alt="KAMISMAX" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="section03">
+              <div class="container-fluid">
+                <div class="characteristics first">
+                  <h4 class="text-center"><span>(1){{$t("section03.part1Title")}}</span></h4>
+                  <div class="char-text">
+                    <h6 v-html="$t('section03.part1Body')"></h6>
+                  </div>
+                  <div class="row mx-0" id="style">
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-3 p-0" v-for="stylist in stylists">
+                      <img :src="stylist.imageLink" :alt="stylist.name" class="img-fluid">
+                      <!-- <p>{{stylist.name}}</p> -->
+                    </div>
+                  </div>
+                  <div class="bottom-text row mx-0">
+                    <div class="col-lg-2 col-md-3 col-sm-3 and-more">
+                      <div class="inner-text">
+                        <p class="text-center mb-0">...and more!</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-9 bg-white">
+                      <p class="smaller" v-html="$t('section03.part1Bottom')"></p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="characteristics second">
+                  <h4 class="text-center"><span>(2){{$t("section03.part2Title")}}</span></h4>
+                  <div class="char-text">
+                    <h6 v-html="$t('section03.part2Body')"></h6>
+                      <h5>{{$t("section03.part2listTitle")}}</h5>
+                      <!-- <ul>
+                        <li>トレンド／</li>
+                        <li>スタディ／</li>
+                        <li>リアリティ／</li>
+                        <li>バラエティ／</li>
+                        <li>スペシャル／</li>
+                        <li>エンターテインメント／</li>
+                        <li>カミカリスマ</li>
+                      </ul> -->
+                      <ul>
+                        <li>{{$t("section03.part2list1")}}</li>
+                        <li>{{$t("section03.part2list2")}}</li>
+                        <li>{{$t("section03.part2list3")}}</li>
+                        <li>{{$t("section03.part2list4")}}</li>
+                        <li>{{$t("section03.part2list5")}}</li>
+                        <li>{{$t("section03.part2list6")}}</li>
+                        <li>{{$t("section03.part2list7")}}</li>
+                      </ul>
+
+                      <div class="row">
+                        <div class="col-lg-3 p-0"><img src="../../images/proj-kamismax/c-trend.jpg" alt="トレンド" class="img-fluid"></div>
+                        <div class="col-lg-3 p-0"><img src="../../images/proj-kamismax/c-study.jpg" alt="スタディ" class="img-fluid"></div>
+                        <div class="col-lg-3 p-0"><img src="../../images/proj-kamismax/c-haircolor.jpg" alt="ヘアカラー" class="img-fluid"></div>
+                        <div class="col-lg-3 p-0"><img src="../../images/proj-kamismax/c-reality.jpg" alt="リアリティ" class="img-fluid"></div>
+                        <div class="col-lg-3 p-0"><img src="../../images/proj-kamismax/c-variety.jpg" alt="バラエティ" class="img-fluid"></div>
+                        <div class="col-lg-3 p-0"><img src="../../images/proj-kamismax/c-special.jpg" alt="スペシャル" class="img-fluid"></div>
+                        <div class="col-lg-3 p-0"><img src="../../images/proj-kamismax/c-entertainment.jpg" alt="エンターテインメント" class="img-fluid"></div>
+                        <div class="col-lg-3 p-0"><img src="../../images/proj-kamismax/c-kamicharisma.jpg" alt="カミカリスマ" class="img-fluid"></div>
+                        <!-- <div class="col-lg-3"><img src="../../images/proj-kamismax/c-trend.jpg" alt="" class="img-fluid"></div> -->
+                      </div>
+                  </div>
+                 
+                </div>
+
+                <div class="characteristics third">
+                  <h4 class="text-center"><span>(3){{$t("section03.part3Title")}}</span></h4>
+                  <div class="char-text">
+                    <h6>{{$t("section03.part3Body")}}</h6>
+                  </div>
+                    <div class="multi-angle">
+                      <img src="../../images/proj-kamismax/multi-angle.png" alt="マルチアングル機能" class="img-fluid">
+                      <div class="multi-angle-text mt-3" v-html="$t('section03.part3Bottom')"></div>
+                      
+                      <div class="video-presets mt-3 row">
+                        <div class="col">
+                          <img src="../../images/proj-kamismax/v001-multi.png" alt="Multi Angle" class="img-fluid">
+                        </div>
+                        <div class="col">
+                          <img src="../../images/proj-kamismax/v002-4k.png" alt="Multi Angle" class="img-fluid">
+                        </div>
+                        <div class="col">
+                          <img src="../../images/proj-kamismax/v003-3min.png" alt="Multi Angle" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="section04">
+              <div class="container-fluid">
+                <p><span><strong>{{ $t("section04.text1") }}：</strong><br class="line-break500"><a href="https://kamismax.kamisma.com/">https://kamismax.kamisma.com/</a></span></p>
+                <p><span><strong>{{ $t("section04.text2") }}：</strong><br class="line-break500"><a href="https://kamismax.kamisma.com/service1/">https://kamismax.kamisma.com/service1/</a></span></p>
+                <p><span><strong>{{ $t("section04.text3") }}：</strong><br class="line-break500"><a href="https://kamismax.kamisma.com/service2/">https://kamismax.kamisma.com/service2/</a></span></p>
+              </div>
+            </section>
+          
+            
+            
+        </div>
+        <section class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4 company-footer text-center">
+                  <h5>INVADE Co., Ltd.</h5>
+                  <p>TEL: 03-5962-8585
+                  <br><strong>email:</strong><a href="info@invade.co.jp">info@invade.co.jp</a></p>
+                </div>
+                <div class="col-sm-4 text-center">
+                  <h5>{{ $t("footer.service") }}</h5>
+                  <ul class="p-0" style="list-style: none;">
+                    <li><a href="https://beauty.kamisma.com" target="_blank">KAMISMA BEAUTY</a></li>
+                    <li><a href="https://beauty.nile.inc" target="_blank">NILE BEAUTY</a></li>
+                    <li><a href="https://kamismax.kamisma.com" target="_blank">KAMISMAX</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-4">
+                </div>
+              </div>
+              <hr>
+              <p class="text-center">Copyright INVADE Co., Ltd. All Rights Reserved</p>
+            </div>
+        </section>
+  </div>
+</body>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script> -->
+<script>
+
+  var vm = new Vue({
+  el: '#style',
+    data: {
+      stylists: [
+        {id:1, name: 'name', imageLink: '../../images/stylists/1.png'},
+        {id:2, name: 'name', imageLink: '../../images/stylists/2.png'},
+        {id:3, name: 'name', imageLink: '../../images/stylists/3.png'},
+        {id:4, name: 'name', imageLink: '../../images/stylists/4.png'},
+        {id:5, name: 'name', imageLink: '../../images/stylists/5.png'},
+        {id:6, name: 'name', imageLink: '../../images/stylists/6.png'},
+        {id:7, name: 'name', imageLink: '../../images/stylists/8.png'},
+        {id:8, name: 'name', imageLink: '../../images/stylists/9.png'},
+        {id:9, name: 'name', imageLink: '../../images/stylists/10.png'},
+        {id:10, name: 'name', imageLink: '../../images/stylists/11.png'},
+        {id:11, name: 'name', imageLink: '../../images/stylists/12.png'},
+        {id:12, name: 'name', imageLink: '../../images/stylists/13.png'},
+        ]
+    }
+  });
+</script>
+<script src="https://unpkg.com/vue@next"></script>    
+<script src="https://unpkg.com/vue-i18n@next"></script>
+<script>
+  const { createApp } = Vue;
+  const { createI18n } = VueI18n;
+  const i18n = createI18n({
+    locale: "ja",
+    messages: {
+      en: {
+        top: {
+          phrase: 'Streaming Video Service for Beauty Industry',
+        },
+        section01: {
+          h5text: 'KAMISMAX: <br> Online Platform in Realizing the New Wave of Educational Environment',
+          li1: 'Task for Education for Beauty/Salon Industry',
+          li2: 'Task of Educational Streaming Video Service',
+          ptext: 'Providing a New Teaching Method of Above Mentioned Purposes',
+          text2: 'Register for Service',
+          text3: 'See Details'
+        },
+        section02: {
+          text1: '【Characteristics of KAMISMAX】',
+          text1Title: 'Exclusive Cast',
+          text1Body: 'Cast of KAMI CHARISMA award-winning stylists. You will be able to see their first class skills as well as their thoughts and personalities.',
+          text2Title: 'Rich in Streaming Video Contents',
+          text2Body: 'Different types of program setting, such as skills and enjoyable contents.  Also, concents that are only shown on KAMISMAX.',
+          text3Title: 'Innovative Viewing Environment in Beauty Industry',
+          text3Body: 'Multiangle Views x High Quality 4K.  Innovative in learn strategies.',
+        },
+        section03: {
+          part1Title: 'Exclusive Cast',
+          part1Body: 'Cast of KAMI CHARISMA award-winning stylists, showcasing not only their technical skills but their personalities as well to keep you entertained.',
+          part1Bottom: 'We will upload <strong>new videos with top-notch stylists every week</strong><br>Not only technical skills, we will provide you with videos that you could only view on <span>KAMISMAX</span>!',
+          part2Title: 'Rich in Streaming Video Contents',
+          part2Body: 'From current fad to up-to-date techniques in TREND, technical commentary and theory in STUDY, we also provide line-ups like Interview, Discussion, Honest Opinions, Events, all having entertainment aspect to keep you engaged.',
+          part2Bottom: 'Trend/Study/Reality/Variety/Special/Entertainment/KAMI CHARISMA',
+          part3Title: 'The Innovative Viewing Environment in Beauty Industry',
+          part3Body: 'Using Multi-Angle x the High Quality 4K.   With Multi-Angle, you can switch the viewing angle from click of the button.  With KAMISMAX, you can choose from Up-Close, Wide, Top, and POV (Point of View) Shots.  We are hoping to make this the industry specific function in the salon industry.',
+          part3Bottom: '<p>Because 4K Camera is used to film the video, you will be able to see every strand and the color of hair very clearly.  Also, the top-notch video/broadcast creators in Japan are part of the team, so you can enjoy a unique service. </p><p>We will keep adding new contents and service and create better learning environment. </p>',
+          part2listTitle: 'Programming List',
+          part2list1: 'Trend/',
+          part2list2: 'Study/',
+          part2list3: 'Reality/',
+          part2list4: 'Variety/',
+          part2list5: 'Special/',
+          part2list6: 'Entertainment/',
+          part2list7: 'KAMI CHARISMA'
+        },
+        section04: {
+          text1: 'Official Site',
+          text2: 'Explanation Page',
+          text3: 'Sample Videos',
+        },
+        footer: {
+          service: "Service",
+        }
+      },
+      ja: {
+        top: {
+          phrase: '美容の世界を変えるオンライン動画配信サービス',
+        },
+        section01: {
+          h5text: 'KAMISMAXは、<br>次代に向けた新しい教育環境を実現する<br>独自開発オンラインプラットフォームです。',
+          li1: '美容業界における教育の課題',
+          li2: '教育動画配信サービス市場の課題',
+          ptext: '二つの課題を解決するため新たな学びを提供していきます',
+          text2: 'サービスのお申し込み',
+          text3: 'より詳しい内容をご覧になりたい方'
+        },
+        section02: {
+          text1: '【KAMISMAXのこだわり・特徴】',
+          text1Title: '厳選されたキャスティング',
+          text1Body: '一流の証、カミカリスマを受賞された美容師・美容室の方々を中心に出演者をキャスティング。<br>一流の技術はもちろん、その思考や人物像にも触れることができる内容もお届けします。',
+          text2Title: '豊富な映像配信コンテンツ',
+          text2Body: '番組の構成は様々。技術＋楽しめる映像、を幅広く配信しています。KAMISMAXでしか見ることができない企画も提供しています。',
+          text3Title: '美容業界初の視聴環境',
+          text3Body: '⾊んな⾓度から⾒ることができる「マルチアングル」×圧倒的な映像クオリティ「４K」を採⽤しています。学びの視点が大きく変わります。',
+        },
+        section03: {
+          part1Title: '厳選されたキャスティング',
+          part1Body: '⼀流の証でもある「カミカリスマ」を受賞された⽅々を中⼼に出演者をキャスティングし、技術だけではなく⼈物像や考え⽅にも触れることができ、モチベーションアップに繋がる豊富なコンテンツをお届けしています。',
+          part1Bottom: '<strong>毎週</strong>豪華メンバーで<strong>新作映像</strong>を配信していきます。<br>技術だけでなく、<span>KAMISMAX</span>でしか見られない<br class="line-break500">貴重な映像をたくさんお届けしますので、<br class="line-break500">楽しみにしていてください。乞うご期待！',
+          part2Title: '豊富な映像配信コンテンツ',
+          part2Body: '配信される番組は、トレンドスタイルや最新テクニックを紹介するトレンドチャンネル、 技術解説・理論などのレクチャー動画をお届けするスタディチャンネルをはじめ、インタビューや対談、本⾳トークやヘアイベントなどエンターテイメント性のある 豊富なラインナップで楽しみながら学べる環境を提供します。',
+          part3Title: '厳選されたキャスティング',
+          part3Body: '⾊んな⾓度から⾒ることができる「マルチアングル」×圧倒的な映像クオリティ「４K」を採⽤。 この「マルチアングル」は複数の⽅向から撮影されている映像を、ボタン⼀つで⾃由に視点を切り替えることが出来る機能です。 KAMISMAXでは、寄り・引き・真上・⼿元の⽅向から好きな視点を選んで視聴して頂けます。 美容業界初の機能として、教育動画の可能性を⼤幅に引き上げていきます。',
+          part3Bottom: '<p>映像自体は、髪一本一本の動きや色を鮮明に捉えることができる4Kカメラで撮影していますので、圧倒的クリアな画質で視聴を楽しんでいただけます。さらに撮影チームには日本を代表するトップクリエイターたちを迎え、見やすさ・わかりやすさだけでなく、カッコよくクリエイティブな世界観を圧巻の仕上がりでお届けいたします。</p><p>今後、続々とコンテンツやサービスを充実させて、新しい教育の形を想像していきます。</p>',
+          part2listTitle: '番組一覧',
+          part2list1: 'トレンド・',
+          part2list2: 'スタディ・',
+          part2list3: 'リアリティ・',
+          part2list4: 'バラエティ・',
+          part2list5: 'スペシャル・',
+          part2list6: 'エンターテインメント・',
+          part2list7: 'カミカリスマ'
+        },
+        section04: {
+          text1: '公式サイト',
+          text2: '解説サイト',
+          text3: 'サンプル映像',
+        },
+        footer: {
+          service: "サービス",
+        }
+      },
+      methods: {
+        htmlToText: function (html) {
+          this.utilityEl.innerHTML = html;
+          return this.utilityEl.textContent;
+        }
+      }
+    },
+  });
+
+  // console.log($t("footer.service"));
+  const app = createApp({});
+  app.use(i18n);
+  app.mount("#kamismaxApp");
+</script>
+
+</html>
